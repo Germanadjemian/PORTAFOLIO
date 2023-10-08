@@ -1,0 +1,21 @@
+1
+Esta en la carpeta llamada TA10
+
+3
+LinkedList en Java: Esta implementación tiene la ventaja de ser fácil de usar y generalmente eficiente en términos de tiempo de ejecución. Sin embargo, puede tener una sobrecarga de memoria debido a la necesidad de almacenar referencias a objetos.
+
+TDA: Una lista enlazada personalizada como un TDA en Java, tienes un control más directo sobre cómo se almacenan los elementos. Esto podría permitirte reducir la sobrecarga de memoria al eliminar algunas de las referencias adicionales que se almacenan en la LinkedList de Java. Sin embargo, también implica más trabajo y una mayor complejidad en la implementación.
+
+4
+agregarSucursal(String ciudad): Esta función simplemente agrega un elemento a la lista enlazada. Su tiempo de ejecución es O(1)
+
+buscarSucursal(String ciudad): Esta función busca una ciudad en la lista usando el método indexOf de la LinkedList. El tiempo de ejecución es O(n)
+
+listarSucursales(): Esta función itera a través de la lista e imprime cada elemento. Su tiempo de ejecución es O(n)
+
+cantidadSucursales(): Esta función devuelve el tamaño de la lista. Su tiempo de ejecución es O(1)
+
+estaVacia(): Esta función verifica si la lista está vacía. Su tiempo de ejecución es O(1) ya que simplemente verifica si el tamaño interno es igual a cero.
+
+Imprimir(String espacios): Esta función concatena todos los elementos de la lista en una cadena. Tiene un bucle que recorre la lista una vez, por lo que su tiempo de ejecución es O(n), donde n es el tamaño de la lista. Además, tiene una operación de impresión que es O(1) ya que simplemente imprime la cadena.
+

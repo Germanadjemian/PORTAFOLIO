@@ -1,0 +1,40 @@
+LN:Agrega un nuevo objeto de la clase Producto a la lista productos del stock del Almacen (el cual es una lista enlazada)
+
+Precondiciones:Tiene que exisitir la lista (en este caso listaProducto)
+		Tiene que por lo menos existir un objeto de la clase Producto (el producto a agregar de la clase Producto)
+
+Postcondiciones: el producto queda agregado a la lista
+
+
+COMIENZO
+	insertarProductoPrincipio(producto) {
+		Si(lista.isEmpty()){
+			cabeza = producto
+		} Sino{
+			producto.siguiente = cabeza
+			cabeza = producto
+		}
+			
+	}
+
+FIN
+
+COMIENZO
+
+
+insertarProductoFinal(producto) {
+		Si(lista.isEmpty()){
+			cabeza = producto
+		} Sino{
+			actual = cabeza
+			Mientras(actual.siguiente != null){
+				actual=actual.siguiente
+				
+				}
+			actual.siguiente = producto
+		}
+			
+	}
+
+
+FIN

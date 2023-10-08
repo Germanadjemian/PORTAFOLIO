@@ -1,0 +1,50 @@
+//  PREGUNTA //
+
+Observa el siguiente código:
+String s = "1";
+while (s != "1000") {
+s += "0";
+}
+El mismo representa un bucle infinito ya que la comparación con el operador == entre el objeto s y el
+literal “1000” jamás devuelve True.
+● ¿Por qué esto es así? ¿Qué diferencia representa con otros lenguajes como C#?
+EJERCICIO #2
+Observa los siguientes fragmentos de código:
+1.
+String s1 = "Hola";
+String s2 = "Hola";
+if ( s1 == s2 ) {
+System.out.println( "True" );
+} else {
+System.out.println( "False" );
+}
+2.
+String s1 = new String("Hola");
+String s2 = "Hola";
+if ( s1 == s2 ) {
+System.out.println( "True" );
+} else {
+System.out.println( "False" );
+}
+● ¿Qué sentencia se ejecuta como resultado del If en cada caso y por qué?
+
+
+//RESPUESTA//
+--- 1 ---
+En el primer código, la comparación s != "1000" nunca será verdadera porque está comparando dos objetos diferentes,
+es decir, un objeto String y un literal de cadena "1000". En Java, cuando se utiliza el operador == para comparar objetos,
+se verifica si los dos operandos se refieren al mismo objeto en la memoria, es decir, si tienen la misma dirección de memoria.
+ En cambio, cuando se compara el contenido de dos objetos String, se debe utilizar el método equals() en lugar del operador ==.
+ --- 2 ---
+ En el segundo código, en el primer caso, la comparación s1 == s2 devuelve verdadero porque ambas cadenas están en el pool
+  de cadenas de Java. Cuando se utiliza el operador == para comparar dos cadenas literales idénticas, Java utiliza una única
+  instancia de cadena en la memoria y las dos cadenas apuntan a la misma instancia.
+
+ En el segundo caso, la comparación s1 == s2 devuelve falso porque la cadena s1 se crea explícitamente como un objeto
+  String nuevo utilizando el operador new, lo que hace que se cree una nueva instancia de cadena en la memoria, mientras
+  que s2 es una cadena literal que ya está en el pool de cadenas. Aunque ambas cadenas tienen el mismo contenido, no son
+  la misma instancia de objeto en la memoria (es basicamente la diferencia entre comparar con equals y el operdaor "=="
+  , ya que uno compara que el contenido sea el mismo y otro compara que la dirección de memoria a la que apunta la referncia
+  del objeto sea la misma, lo cual son dos cosas parecidas pero distintas a fin de cuentas).
+
+

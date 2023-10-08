@@ -1,0 +1,51 @@
+Métodos básicos de pilas (Stacks):
+
+push(elemento): Agrega un elemento en la parte superior de la pila.
+pop(): Elimina y devuelve el elemento en la parte superior de la pila.
+peek(): Devuelve el elemento en la parte superior de la pila sin eliminarlo.
+isEmpty(): Comprueba si la pila está vacía.
+size(): Devuelve la cantidad de elementos en la pila.
+
+
+
+Métodos básicos de colas (Queues):
+
+enqueue(elemento): Agrega un elemento al final de la cola.
+dequeue(): Elimina y devuelve el elemento en el frente de la cola.
+peek(): Devuelve el elemento en el frente de la cola sin eliminarlo.
+isEmpty(): Comprueba si la cola está vacía.
+size(): Devuelve la cantidad de elementos en la cola.
+
+y según el libro:
+
+constructor: Crear una nueva cola, vacía.
+agregar: Agregar un elemento a la cola.
+quitar: Quitar un elemento de la cola y devolverlo. El elemento que se
+devuelve es el primero en haber sido agregado.
+estaVacia: Verifica si la cola está vacía.
+
+
+Esta es una implmentación de una Cola genérica, basada en la clase
+preincorporada java.util.LinkedList:
+
+
+
+public class Cola {
+	private LinkedList lista;
+	public Cola() {
+		lista = new LinkedList ();
+		}
+	public boolean estaVacia() {
+		return lista.isEmpty();
+		}
+	public void agregar(Object obj) {
+		lista.addLast (obj);
+		}
+	public Object quitar() {
+		return list.removeFirst ();	
+		}
+}
+
+Un objeto cola contiene una única variable de instancia, que es la lista
+que la implementa. Para cada uno de los métodos, todo lo que tenemos
+que hacer es llamar a un método de la clase LinkedList.

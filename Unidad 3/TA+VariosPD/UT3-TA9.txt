@@ -1,0 +1,4 @@
+1-  Lo deslinkeamos y lo retornamos o guardamos en algun lugar de la memoria
+
+2- Para quitar de la lista, simplemente lo deslinkeamos pero lo retornamos o lo guardamos con alguna otra referencia y para sacarlo de la lista y destruirlo, lo deslinkeamos y aparte
+ni lo guardamos en ningun lado (ninguna referencia al objeto) ni lo retornamos

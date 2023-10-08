@@ -1,0 +1,7 @@
+Pensando la computacion como un científico
+
+Listas: pags 195-197
+
+Pilas: pags 207-208
+
+Colas: 221-229
